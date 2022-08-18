@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+}    
+body{
+    background: #ddd;
+    font-family: monospace;
+}
+
+.container-table{
+    width: 90%;
+    background: white;
+    margin: 50px auto;
+    box-shadow: 0 0 20px #333;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 50px;
+
+    position: relative;
+}
+
+.table__title{
+    grid-column-start: 1;
+    grid-column-end: 5;
+
+    background: rgba(122, 21, 126);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.9em;
+}
+
+.table__header, .table__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.table__header{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.table__item{
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+
+/*Formulario Insertar*/
+.container-add{
+    width: 90%;
+    margin: 50px auto;
+}
+.container__title{
+    margin: 0;
+    padding: 10px;
+    background: rgb(122, 21, 126);
+    color: white;
+    font-size: 2.3em;
+    text-align: center;
+}
+
+.container__from{
+    /*background: white;*/
+    box-shadow: 0 0 20px #333;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container__label{
+    font-size: 1.3em;
+    width: 20%;
+    margin-left: 350px;
+}
+.container__input{
+    width: 45%;
+    margin-bottom: 10px;
+    font-size: 1em;
+    padding: 1px;
+    margin-left: 350px;
+    margin-right:250px;
+
+}
+
+.container__submit{
+    background: rgba(122, 21, 126);
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 150px;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-left: 525px;
+
+}
+
+
+
+/*editar*/
+
+.title_edit{
+    position: absolute;
+    right: 7%;
+    color: white;
+    text-decoration: none;
+
+}
+
+.title_edit:hover{
+    text-decoration: underline;
+}
+
+.container-table--edit{
+    grid-template-columns: repeat(5, 1fr);
+
+    width: 95%;
+    min-width: 900px;
+    grid-auto-rows: 40px;
+}
+
+.table__title--edit{
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+
+.table__input{
+    display: block;
+    padding-left: 10px;
+}
+
+.container__submit--actualizar{
+    background: rgba(122, 21, 126);
+    padding: 0;
+    margin: 0;
+    font-size: .9em;
+    width: 100%;
+}
